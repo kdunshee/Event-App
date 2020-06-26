@@ -37,7 +37,7 @@ class Api::OccasionsController < ApplicationController
     end
 
     def occasion_params
-      params.require(:occasion).permit(:name, :description, :date, :additional_info)
+      params.require(:occasion).permit(:name, :description, :time, :additional_info)
     end
 end
 
