@@ -1,8 +1,20 @@
 import React from 'react';
-import { Header, } from "semantic-ui-react";
+import OccasionForm from './OccasionForm'
+import {Header} from 'semantic-ui-react'
 
-const Create = () => (
-  <Header as="h1">Create</Header>
-)
 
+const Create = () => {
+    
+  return (
+      <div>
+      <Header as="h1">Create a new event!</Header>
+      <hr />
+      <br />
+      <br/>
+    
+    <br/>
+    <br />
+  </div>
+);
+};
 export default Create;

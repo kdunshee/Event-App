@@ -3,7 +3,7 @@ import { Link, } from 'react-router-dom';
 import { Menu, } from "semantic-ui-react";
 
 const Navbar = () => (
-  <Menu>
+  <Menu color ='gray' >
     <Link to="/">
       <Menu.Item>
         Home

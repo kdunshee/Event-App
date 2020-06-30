@@ -4,9 +4,11 @@ import { Card } from "semantic-ui-react";
 import { Button } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import OccasionForm from './OccasionForm'
+import Counter from './Counter'
 
 const Occasions = (props) => {
   const [occasions, setOccasions] = useState([]);
+  
 
   useEffect(() => {
     axios
@@ -42,6 +44,7 @@ const Occasions = (props) => {
             <Card.Description>{occasion.time}</Card.Description>
           </Card.Content>
           <Card.Content extra>
+            
             <Button color= "ui inverted primary button"as={Link} to={`/occasions/${occasion.id}`}>
               View
             </Button>
@@ -59,8 +62,10 @@ const Occasions = (props) => {
   return (
     <div>
       <Card.Group>{renderOccasions()}</Card.Group>
+      <Counter />
       <br/>
       <br/>
+      <h1>Add a new event</h1>
       <OccasionForm add = {addOccasion}/>
     </div>
   );
