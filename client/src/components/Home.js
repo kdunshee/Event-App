@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "semantic-ui-react";
 import Occasions from "./Occasions";
-import OccasionForm from './OccasionForm'
+
 
 const Home = () => {
     

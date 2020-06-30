@@ -24,7 +24,7 @@ class OccasionForm extends React.Component {
       <div>
        
 
-        <Header as="h1">Enter New Event</Header>
+       
         <Form onSubmit={this.handleSubmit}>
           <Form.Group widths="equal">
             <Form.Input
